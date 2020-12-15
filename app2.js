@@ -8,7 +8,6 @@ function errorHandle(error){
     alert("Oops!! Something went wrong please try again later");
 }
 function eventHandler2() {
-    console.log("2button");
     var ip=inpTxt2.value;
     var urlUpdate=""+url2+"?text="+ip;
     fetch(urlUpdate)

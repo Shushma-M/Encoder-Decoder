@@ -5,17 +5,12 @@ var opTxt=document.querySelector("#output-txt");
 var btnClick=document.querySelector("#btn");
 var output;
 
-function refresh(){
-    location.reload();
-}
-
 function errorHandle(error){
     console.log("Error occured:",error);
     alert("Oops!! Something went wrong please try again later");
 }
 
 function eventHandler() {
-    console.log("1button");
     var ip=inpTxt.value;
     var urlUpdate=""+url+"?text="+ip;
     fetch(urlUpdate)
